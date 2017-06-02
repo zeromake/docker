@@ -1,1 +1,0 @@
-docker run --name dq_home2 -d -v ${PWD}:/data/web:rw -p 9033:9033 zeromake/uwsgi
