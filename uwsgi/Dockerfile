@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories && apk add --no-cache mariadb-dev gcc g++ make python2 python2-dev py2-pip linux-headers
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories && apk add --no-cache mariadb-dev gcc g++ make python2 python2-dev py2-pip linux-headers tzdata && cp -r -f /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 COPY requirements.txt /tmp/requirements.txt
 
