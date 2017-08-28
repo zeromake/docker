@@ -1,0 +1,5 @@
+flask
+mysqlclient
+psycopg2
+Pillow
+pandas
