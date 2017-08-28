@@ -1,5 +1,5 @@
 DOCKERNAME = test-uwsgi
-DOCKERIMAGE = zeromake/uwsgi
+DOCKERIMAGE = zeromake/uwsgi:0.1
 PWD = $(shell pwd)
 
 build:
