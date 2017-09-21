@@ -1,5 +1,6 @@
 flask
 mysqlclient
+pymysql
 flask-RESTful
 flask_sqlalchemy
 flask_httpauth

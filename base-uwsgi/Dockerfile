@@ -31,7 +31,7 @@ RUN apk add --no-cache --virtual .build-deps mariadb-dev linux-headers postgresq
 			-o \
 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) \
 		\) -exec rm -rf '{}' +
-RUN apk add --no-cache mariadb-client-libs libpq
+RUN apk add --no-cache mariadb-client-libs libpq tzdata
 
 RUN rm -rf /tmp/requirements.txt
 
